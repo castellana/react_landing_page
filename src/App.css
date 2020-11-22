@@ -1,38 +1,104 @@
-.App {
+* {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: #39811D;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top: 6vh;
+}
+header p{
+  width: 75%;
+  line-height: 25px;
+}
+#facts-group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  margin-bottom: 6vh;
+}
+.main-title {
+  color: #fff;
+  font-size: 4rem;
 }
 
-.App-link {
-  color: #61dafb;
+hr {
+  color: #fff;
+  width: 30%;
+}
+.facts {
+  border-right: #fff 1px solid;
+}
+.facts p {
+  width: 100%;
+  font-weight: bold;
+}
+#first-section {
+  margin: 10vh auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 60vh;
+}
+#first-section h3{
+  color: #39811D;
+  font-size: 1.5rem;
+}
+#first-section h2 {
+font-size: 2.5rem;
+width: 65%;
+text-align: center;
+}
+#first-section h4 {
+  font-size: 1.5rem;
+}
+#activities-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  line-height: 30px;
+  margin: 8vh auto;
+}
+.activities {
+  display: flex;
+  justify-content: space-evenly;
+  width: 70%;
+  gap: 20px;
+}
+.activities img{
+  width: 30px;
+  height: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#galery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+figure img {
+  width: 100%;
+  object-fit: cover;
+  height: 40vh;
+}
+
+figcaption {
+  line-height: 30px;
+}
+
+figcaption h4{
+   color: #0869d8;
+   font-size: 1.3rem;
+}
+
+figure span {
+  color: #4eb84e;
 }
